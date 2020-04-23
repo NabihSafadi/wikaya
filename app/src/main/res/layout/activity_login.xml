@@ -1,0 +1,114 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/layout_login"
+    android:background="@drawable/background"
+    android:paddingTop="10dp"
+    >
+
+
+    <ImageView
+        android:id="@+id/welcome_imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/logo"
+        android:layout_gravity="center"
+        android:contentDescription="@string/image_desc_logo" />
+    <ImageView
+         android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="@drawable/wikaya"
+        android:layout_gravity="center"
+        android:contentDescription="@string/image_desc_logo" />
+
+
+
+    <EditText
+        android:id="@+id/et_login_email"
+        android:layout_width="316dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:background="@drawable/edit_text"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:paddingStart="15dp"
+        android:paddingLeft="15dp"
+        android:paddingEnd="15dp"
+        android:layout_marginTop="20dp"
+        android:autofillHints="@string/email" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_login_password"
+            android:layout_width="280dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/edit_text"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:importantForAutofill="no" />
+
+        <ImageButton
+            android:id="@+id/ib_show_hide_password"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:backgroundTint="#00000000"
+            android:contentDescription="@string/image_desc_eye_button"
+            app:srcCompat="@drawable/icon_eye" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_login_forgot_passwrod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:background="@null"
+        android:textAllCaps="false"
+        android:paddingRight="20dp"
+        android:text="@string/forgot_password"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+
+
+
+
+    <Button
+        android:id="@+id/btn_login_login"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:text="@string/login"
+        android:layout_marginBottom="5dp"
+        android:textAllCaps="false"
+        android:background="@drawable/filledroundedbutton"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+
+    <Button
+        android:id="@+id/btn_login_register"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:textAllCaps="false"
+        android:background="@drawable/emptyroundedbutton"
+        android:text="@string/register" />
+
+
+</LinearLayout>

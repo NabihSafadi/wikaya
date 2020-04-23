@@ -1,0 +1,287 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_location_details"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/registerbackground"
+
+    >
+
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       >
+
+
+
+        <ImageView
+             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@drawable/layout_top"
+            />
+
+        <TextView
+            android:id="@+id/tv_location_details_adddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:text="@string/location_type"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMinTextSize="40pt"
+            android:autoSizeMaxTextSize="100pt"
+            android:autoSizeStepGranularity="2sp"
+            app:fontFamily="serif-monospace" />
+
+
+
+    </FrameLayout>
+
+
+    <ScrollView
+        android:id="@+id/sv_location_details"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_location_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="@string/location_type"
+                app:fontFamily="serif-monospace" />
+
+
+            <RadioGroup
+                android:id="@+id/rg_location_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+
+                >
+
+                <RadioButton
+                    android:id="@+id/rb_residential"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/green"
+                    android:text="@string/residential" />
+
+                <RadioButton
+                    android:id="@+id/rb_other"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/green"
+                    android:text="@string/other" />
+
+            </RadioGroup>
+
+            <View
+                android:id="@+id/view_residential_sector"
+                android:layout_width="300dp"
+                android:layout_height="0.5dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@color/quantum_grey"
+                />
+
+            <TextView
+                android:id="@+id/tv_residential_type_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="@string/residential_type"
+                app:fontFamily="serif-monospace" />
+
+            <RadioGroup
+                android:id="@+id/rg_residential_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:orientation="vertical"
+
+                >
+                <RadioButton
+                    android:id="@+id/rb_unselect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/green"
+                    android:text="@string/unselect" />
+
+
+                <RadioButton
+                    android:id="@+id/rb_apartment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/green"
+                    android:text="@string/apartment_studio" />
+
+                <RadioButton
+                    android:id="@+id/rb_villa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/green"
+                    android:text="@string/villa" />
+
+                <RadioButton
+                    android:id="@+id/rb_town_house"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/green"
+                    android:text="@string/town_house" />
+
+                <RadioButton
+                    android:id="@+id/rb_whole_building"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/green"
+                    android:text="@string/building_main_entrance" />
+
+
+            </RadioGroup>
+
+
+            <View
+                android:id="@+id/view_title_deed"
+                android:layout_width="300dp"
+                android:layout_height="0.5dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@color/quantum_grey"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+
+
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_optional"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/optional"
+                        app:fontFamily="serif-monospace" />
+
+                    <EditText
+                        android:id="@+id/et_building_section"
+                        android:layout_width="316dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/edit_text"
+                        android:hint="@string/section"
+                        android:paddingStart="15dp"
+                        android:paddingLeft="15dp"
+                        android:paddingEnd="15dp"
+                        />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/et_numebr_of_people_allowed"
+                android:layout_width="316dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:background="@drawable/edit_text"
+                android:hint="@string/no_ppl_allowed"
+                android:inputType="number"
+                android:paddingStart="15dp"
+                android:paddingLeft="15dp"
+                android:paddingEnd="15dp"
+                android:textSize="12sp"
+                android:layout_marginTop="10dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+
+
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_refer_to_title_deed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/refer_title_deed"
+                        app:fontFamily="serif-monospace" />
+
+                    <EditText
+                        android:id="@+id/et_location_details_property_number"
+                        android:layout_width="316dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/edit_text"
+                        android:paddingStart="15dp"
+                        android:paddingLeft="15dp"
+                        android:paddingEnd="15dp"
+                        android:hint="@string/property_number"
+                        android:layout_gravity="center"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+            <Button
+                android:id="@+id/btn_create"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:textAllCaps="false"
+                android:background="@drawable/filledroundedbutton"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:layout_marginTop="20dp"
+                android:text="@string/create"
+                android:layout_marginBottom="5dp"
+
+                />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,107 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/layout_qrcode_issue"
+    android:background="@drawable/registerbackground"
+
+    >
+
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@drawable/layout_top"
+            />
+
+        <TextView
+            android:id="@+id/tv_location_details_adddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hang_instructions"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMinTextSize="40pt"
+            android:autoSizeMaxTextSize="100pt"
+            android:autoSizeStepGranularity="2sp"
+            app:fontFamily="serif-monospace" />
+
+
+
+    </FrameLayout>
+
+
+
+
+    <TextView
+        android:id="@+id/tv_qr_place_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/place_name"
+        android:gravity="center"
+        />
+
+    <ImageView
+        android:id="@+id/iv_qr"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="@drawable/logo"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/image_desc_logo" />
+
+    <Button
+        android:id="@+id/btn_qr_send"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:textAllCaps="false"
+        android:layout_marginTop="20dp"
+         android:background="@drawable/filledroundedbutton"
+        android:text="@string/send" />
+
+
+    <Button
+        android:id="@+id/btn_qr_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:textAllCaps="false"
+        android:layout_marginTop="10dp"
+         android:background="@drawable/filledroundedbutton"
+
+        android:text="@string/delete" />
+
+
+    <Button
+        android:id="@+id/btn_qr_done"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:textAllCaps="false"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/emptyroundedbutton"
+        android:text="@string/done" />
+
+
+
+
+
+</LinearLayout>

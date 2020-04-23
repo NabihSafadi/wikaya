@@ -1,0 +1,186 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/registerbackground"
+
+    android:id="@+id/layout_main">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/color_tool_bar"
+
+        android:theme="@style/Theme.AppCompat">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            app:popupTheme="@style/TextAppearance.AppCompat.Button"
+            >
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:background="@drawable/wikaya_green"
+                android:layout_gravity="center"
+                android:contentDescription="@string/image_desc_logo" />
+            />
+
+            <FrameLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_gravity="right"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/ib_main_exit"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="right"
+                    android:background="@drawable/icon_exit"
+                    />
+
+
+
+
+            </FrameLayout>
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_create_place"
+            android:layout_width="120dp"
+            android:layout_height="90dp"
+            android:textAllCaps="false"
+            android:background="@drawable/add_place"
+              android:textSize="12sp"
+            />
+
+        <Button
+            android:id="@+id/btn_my_health_status"
+            android:layout_width="120dp"
+            android:layout_height="90dp"
+            android:textAllCaps="false"
+            android:textSize="12sp"
+            android:background="@drawable/my_health_status"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+              />
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+         android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_check_in"
+            android:layout_width="120dp"
+            android:layout_height="90dp"
+            android:textAllCaps="false"
+            android:textSize="12sp"
+            android:background="@drawable/check_in"
+             android:layout_gravity="center"
+
+            />
+
+
+        <Button
+            android:id="@+id/btn_check_out"
+            android:layout_width="120dp"
+            android:layout_height="90dp"
+            android:textAllCaps="false"
+            android:textSize="12sp"
+            android:background="@drawable/check_out"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+
+            />
+
+
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_edit_profile"
+            android:layout_width="120dp"
+            android:layout_height="90dp"
+            android:textAllCaps="false"
+            android:textSize="12sp"
+            android:layout_gravity="center"
+             android:background="@drawable/profile"
+
+
+            />
+
+
+        <Button
+            android:id="@+id/btn_edit_place"
+            android:layout_width="120dp"
+            android:layout_height="90dp"
+            android:textAllCaps="false"
+            android:textSize="12sp"
+            android:layout_gravity="center"
+            android:background="@drawable/edit_place"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+
+            />
+
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>

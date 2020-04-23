@@ -1,0 +1,319 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/layout_validate_check_in"
+    android:background="@drawable/checkin_background"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+
+    >
+
+
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@drawable/layout_top"
+            />
+
+        <TextView
+            android:id="@+id/tv_location_details_adddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/checking_in"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMinTextSize="40pt"
+            android:autoSizeMaxTextSize="100pt"
+            android:autoSizeStepGranularity="2sp"
+            app:fontFamily="serif-monospace" />
+
+
+
+    </FrameLayout>
+
+
+    <ScrollView
+        android:id="@+id/sv_validate_checkin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/place"
+                android:textColor="@color/light_title"
+
+                />
+
+            <TextView
+                android:id="@+id/tv_vc_place_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/place_name"
+                android:textColor="@color/darkgrey"
+                />
+            <TextView
+                android:id="@+id/tv_vc_property_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/property_type"
+                android:textColor="@color/light_title"
+
+                />
+
+            <TextView
+                android:id="@+id/tv_vc_property_numebr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/property_number_dots"
+                android:textColor="@color/darkgrey"
+                />
+
+            <RadioGroup
+                android:id="@+id/rg_vc_purpose_visit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+                <RadioButton
+                    android:id="@+id/rb_meeting_someone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/green"
+                    android:text="@string/meeting_someone"
+                    android:checked="true"
+                    />
+
+                <RadioButton
+                    android:id="@+id/rb_lobby_only"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/green"
+                    android:text="@string/lobby_only" />
+
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/et_vc_apartment_number"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/edit_text"
+                android:hint="@string/apartment_number"
+                android:paddingStart="15dp"
+                android:paddingLeft="15dp"
+                android:paddingEnd="15dp"
+                android:autofillHints="@string/email" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/address"
+                />
+
+            <TextView
+                android:id="@+id/tv_vc_place_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/address"
+                android:textColor="@color/darkgrey"
+                />
+
+
+            <TextView
+                android:id="@+id/tv_vc_ppl_allowed_inside_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/no_ppl_allowed_at"
+                />
+            <TextView
+                android:id="@+id/tv_vc_ppl_allowed_inside"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:text="@string/no_ppl_allowed"
+                android:textColor="@color/darkgrey"
+
+                />
+            <TextView
+                android:id="@+id/tv_vc_current_ppl_inside_title"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no_inside_now"
+                android:layout_marginTop="10dp"
+
+                />
+
+
+            <TextView
+
+                android:id="@+id/tv_vc_current_ppl_inside"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no_inside_now"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+
+                android:textColor="@color/darkgrey" />
+
+            <View
+                android:layout_width="300dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@color/green"
+                />
+
+            <ImageView
+                android:id="@+id/iv_result_image"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                />
+
+
+
+            <TextView
+                android:id="@+id/tv_vc_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/result"
+                android:gravity="center"
+                android:textSize="17sp"
+                android:textColor="@color/green" />
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_vc_confirm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/filledroundedbutton"
+                    android:text="@string/confirm"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="2dp"
+
+                    />
+
+                <Button
+                    android:id="@+id/btn_done"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/filledroundedbutton"
+                    android:text="@string/done"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="2dp"
+
+                    />
+
+
+                <Button
+                    android:id="@+id/btn_vc_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/filledroundedbutton"
+                    android:text="@string/cancel"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="2dp"
+
+                    />
+
+
+
+
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btn_vc_refresh"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/emptyroundedbutton"
+                android:text="@string/refresh"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+
+                />
+
+            <TextView
+                android:id="@+id/tv_vc_see_updates"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/see_updates"
+                android:layout_gravity="center"
+                />
+
+
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

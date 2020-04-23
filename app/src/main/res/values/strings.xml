@@ -1,0 +1,143 @@
+<resources>
+    <string name="app_name">Wikaya</string>
+
+
+    <!-- Button title -->
+
+    <string name="send_code">Send Token</string>
+    <string name="proceed">Continue</string>
+    <string name="create">Create</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="send">Send</string>
+    <string name="done">Done</string>
+    <string name="update">Update</string>
+    <string name="confirm">Confirm</string>
+    <string name="cancel">Cancel</string>
+    <string name="refresh">Refresh</string>
+    <string name="retry">Retry</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <!-- Radio group -->
+    <string name="residential">Residential</string>
+    <string name="other">Other</string>
+    <string name="apartment_studio">Apartment/Studio</string>
+    <string name="villa">Villa</string>
+    <string name="town_house">Town house</string>
+    <string name="unselect">unselect</string>
+    <string name="lobby_only">Lobby only</string>
+    <string name="meeting_someone">Meeting someone</string>
+
+
+    <!-- image description -->
+    <string name="image_desc_logo">logo</string>
+    <string name="image_desc_eye_button">eye button</string>
+
+
+    <!-- edit text hints-->
+
+    <string name="place_name">Place name</string>
+    <string name="email">Email</string>
+    <string name="section">Building section eg: A, B or C </string>
+    <string name="no_ppl_allowed">Number of people allowed inside at a time</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="first_name">First name</string>
+    <string name="last_name">Last name</string>
+    <string name="phone_number">Phone number eg:00971XXXXXXXXX</string>
+    <string name="verify_password">Verify password</string>
+    <string name="token">Token</string>
+    <string name="new_password">New password</string>
+    <string name="apartment_number">Apartment number </string>
+
+
+    <!-- text hints on views-->
+    <string name="search_place">Write the place name and select it</string>
+    <string name="scan_instruction">Place QR Code in the square below</string>
+    <string name="check_out_title">You are checking out from  </string>
+    <string name="place">Place: </string>
+    <string name="property_type">Property type: </string>
+    <string name="property_number_dots">Property number:</string>
+    <string name="address">Address: </string>
+    <string name="checked_in_time">Checked in time:  </string>
+    <string name="time">time  </string>
+    <string name="check_out">Check out </string>
+    <string name="something_wrong">Something went wrong</string>
+    <string name="code_email_hint">you will receive a token, check your spam folder if you do not find it in your inbox</string>
+    <string name="location_type">Choose location type</string>
+    <string name="residential_type">Choose residential type</string>
+    <string name="building_main_entrance">Building main entrance</string>
+    <string name="property_number">Property number</string>
+    <string name="optional">optional </string>
+    <string name="refer_title_deed">Refer to title deed</string>
+    <string name="dont_leave_home">Do not leave home </string>
+    <string name="count_down">Count down </string>
+    <string name="place_not_exist">This place does not exist, contact place owner for correction </string>
+    <string name="hang_instructions">Send the QR Code to your email, print it and hang it on the outside of your property.</string>
+    <string name="token_sent_to_email">A Token is sent to your email</string>
+    <string name="checking_in">You are checking in </string>
+    <string name="no_ppl_allowed_at">Number of people allowed inside at a time:</string>
+    <string name="no_inside_now">Number of people inside now:</string>
+    <string name="result">result</string>
+    <string name="see_updates">to see update of current people inside press refresh</string>
+    <string name="located">successfully located, press continue</string>
+    <string name="are_you_sure">Are you sure?</string>
+    <string name="not_checked_in">You have not checked in any where yet </string>
+    <string name="checked_out">You have been checked out from </string>
+    <string name="exit">Exit</string>
+    <string name="code_detected">Code detected, please wait.. </string>
+    <string name="cancel_check_in">Cancel Check in </string>
+    <string name="can_enter">Press Confirm to check in </string>
+    <string name="write_apt_num">Write the apartment number you wish to visit, and press Confirm to check in </string>
+    <string name="can_not_enter">you can not enter now, please wait until somebody leaves..</string>
+    <string name="checked_in">You have been checked in </string>
+    <string name="already_checked_in">You already checked in this place </string>
+    <string name="new_release_title">New release</string>
+    <string name="new_release_message">a new version is released please update Wikaya</string>
+    <string name="your_registered_places">Your registered places</string>
+    <string name="canot_be_undone">This can not be undone</string>
+    <string name="tap_delete">Tap to delete</string>
+    <string name="delete_place">Delete a place?</string>
+    <string name="no_places">You have no places registered</string>
+    <string name="profile">Profile</string>
+
+    <!-- toast-->
+    <string name="error_place">Something went wrong while location the place, please try again</string>
+    <string name="no_internet">No Internet Connection </string>
+    <string name="provide_email_valid">Please provide a valid email address</string>
+    <string name="email_not_exist">This email does not exist</string>
+    <string name="reset_sent">A Token is sent to your email</string>
+    <string name="provide_number_ppl_allowed">Provide how many person can be inside at a time</string>
+    <string name="provide_property_numebr">Provide your property number</string>
+    <string name="place_uploaded">Place is uploaded successfully</string>
+    <string name="provide_valid_password">Password can not be empty</string>
+    <string name="incorrect_password">Password is incorrect</string>
+    <string name="hs_not_clean">You can not check in, press on HEALTH STATUS for more information</string>
+    <string name="enable_storage">Enable storage , settings -> Aps -> wikaya -> Permission -> press on storage to enable</string>
+    <string name="provide_first_name">Provide your first name</string>
+    <string name="provide_last_name">Provide your last name</string>
+    <string name="password_not_match">Passwords do not match!</string>
+    <string name="password_length">Password must be between 6 - 12 characters</string>
+    <string name="email_registered">Account with this email already exist</string>
+    <string name="incorrect_token">Token is incorrect, please find it in your email.</string>
+    <string name="registerd">You have been registered and logged in</string>
+    <string name="purpose_visit">What is the purpose of your visit?</string>
+    <string name="password_changed">Password is changed, you can login now!</string>
+    <string name="which_apartment">Which apartment you are visiting?</string>
+    <string name="check_in_deleted">Check in has been deleted</string>
+    <string name="login_hint_report">Please Login before using this feature.</string>
+    <string name="place_deleted">Your place is deleted, please dispose QR Code </string>
+    <string name="provide_phone_number">Provide your phone number with country code</string>
+    <string name="profile_updated">Profile updated</string>
+
+    <!-- swipe title-->
+    <string name="delete">Delete</string>
+
+
+    <!-- google map details-->
+
+    <string name="api_key">AIzaSyDP3ZLvfmIZZ5treV-m6zpAXmbpamhiPz8</string>
+
+
+</resources>
